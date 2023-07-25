@@ -9,7 +9,7 @@ char **_lyn_split(char *lyn)
 {
 	int size_ofbaffa = 64, place = 0;
 	char **tokenn;
-	char *token;
+	char *tokenz;
 
 	tokenn = malloc(size_ofbaffa * sizeof(char *));
 	if (!tokenn)

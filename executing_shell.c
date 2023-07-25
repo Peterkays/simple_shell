@@ -32,7 +32,7 @@ int _executing(char **arrgz, char *nputt)
 
 	for (w = 0; w < 4; w++)
 	{
-		if (_stri_comp(arrgz[0], builtin_str[w]) == 0)
+		if (_stri_comp(arrgz[0], builtin_stri[w]) == 0)
 			return ((*builtin_func[w])(arrgz, nputt));
 	}
 	return (_begin(arrgz));

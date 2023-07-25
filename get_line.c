@@ -49,7 +49,7 @@ ssize_t _gt_lyn(char **lyn, size_t *n, __attribute__((unused))FILE * strim)
 			else
 				return (guide + 1);
 		}
-		else if (c == ' ')
+		else if (coco == ' ')
 		{
 			if (fay == 0)
 			{ fay = 1;

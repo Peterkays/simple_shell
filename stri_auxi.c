@@ -93,7 +93,7 @@ char *_stri_dupl(char *destin, char *stg)
   * @n: number of bytes
   * Return: 0 if equal diff if different.
   */
-int _stri_compa(const char *st1, const char *st2, int n)
+int _stri_compa(const char *st1, const char *st2, size_t n)
 {
 	unsigned char usc1 = '\0';
 	unsigned char usc2 = '\0';
