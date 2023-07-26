@@ -30,7 +30,7 @@ int _putchar(char c)
 
 /**
   * _atoi - Change a string to a integer.
-  * @s: String.
+  * @q: String.
   * Return: Integer into the string.
   */
 int _atoi(char *q)

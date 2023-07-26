@@ -42,7 +42,7 @@ ssize_t _gt_lyn(char **lyn, size_t *n, __attribute__((unused))FILE * strim)
 	while (1) /* Infinite loop for prompt*/
 	{ fflush(stdout); /* Flush the stdout in every iteratin*/
 		coco = _ridchar(); /* Read a character */
-		if (coco == EOF || coco == '\n') /* If we hit EOF, replace it with /0 and return */
+		if (coco == EOF || coco == '\n') /* at EOF, replace with /0 and return */
 		{ *(baffar + guide) = '\0';
 			if (coco == EOF)
 				return (-1);

@@ -2,7 +2,7 @@
 
 /**
   * _stri_ptn - Find the positing where the delimie is found in the string.
-  * @s: String.
+  * @sy: String.
   * @delimie: Delimiter.
   * Return: the place in the string.
   */
@@ -25,7 +25,7 @@ int _stri_ptn(char *sy, const char *delimie)
 
 /**
   * _strieq_ptn - Find the positing until the delimie is equal to the string.
-  * @s: String.
+  * @ss: String.
   * @delimie: Delimiter.
   * Return: the place when delimie is different to the string.
   */
@@ -34,7 +34,8 @@ int _strieq_ptn(char *ss, const char *delimie)
 {
 	int w;
 
-	for (w = 0; (ss[w] == delimie[w]) && (ss[w] != '\0' && delimie[w] != '\0'); w++)
+	for (w = 0; (ss[w] == delimie[w]) && (ss[w] != '\0' &&
+				delimie[w] != '\0'); w++)
 	{
 		;
 	}

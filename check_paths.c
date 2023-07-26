@@ -49,12 +49,12 @@ char **_check_way(char **arrgz, int *sine)
 	for (k = 0; *(arrgz[0] + k) != '\0'; k++) /* Check for '/' in the first arg */
 	{
 		if (*(arrgz[0] + k) == '/')
-			return (arrgz); 
+			return (arrgz);
 	}
 	destin_way = malloc(sizeof(char) * 1024); /*Memory alloc for the comp path */
 	if (error_in_alloc2(destin_way) == -1)
 		return (NULL);
-	way = _get_envir("PATH"); /*  Gets the path from the envi with the diff paths */
+	way = _get_envir("PATH"); /*  Getspath from envi with diff paths */
 	copy_lyn = malloc((_stri_size(way) + 1) * sizeof(char *));
 	if (error_in_alloc1(copy_lyn, destin_way) == -1)
 		return (NULL);
@@ -62,7 +62,7 @@ char **_check_way(char **arrgz, int *sine)
 	if (tokenn_way == NULL)
 	{ free(copy_lyn);
 		return (NULL);
-	} 
+	}
 	for (j = 0; *(tokenn_way + j) != NULL; j++)
 	{ _stri_dupl(destin_way, *(tokenn_way + j));
 		if (*destin_way != '\0')

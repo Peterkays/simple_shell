@@ -27,7 +27,8 @@ char **_lyn_split(char *lyn)
 		if (place >= size_ofbaffa)
 		{
 			size_ofbaffa += 64;
-			tokenn = _smart_alloc(tokenn, size_ofbaffa - 64, size_ofbaffa * sizeof(char *));
+			tokenn = _smart_alloc(tokenn,
+					size_ofbaffa - 64, size_ofbaffa * sizeof(char *));
 			if (!tokenn)
 			{
 				perror("star: allocation error\n");

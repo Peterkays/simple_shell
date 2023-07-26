@@ -51,7 +51,8 @@ char *_stritknz_r(char *s, const char *delimie, char **accept_stri);
 int _stri_ptn(char *sy, const char *delimie);
 int _strieq_ptn(char *ss, const char *delimie);
 
-void *_smart_alloc(void *pntr, unsigned int foma_size, unsigned int curnt_size);
+void *_smart_alloc(void *pntr, unsigned int foma_size,
+		unsigned int curnt_size);
 
 char *_get_envir(const char *the_nme);
 char **_way(char *way);

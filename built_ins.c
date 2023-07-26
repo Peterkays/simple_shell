@@ -1,4 +1,5 @@
 #include "shell.h"
+#include <unistd.h>
 
 /**
   * _cdir - Change the directory.

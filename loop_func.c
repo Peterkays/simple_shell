@@ -21,7 +21,7 @@ void _looper(void)
 		{
 			/* Print prompt line. */
 			lenth = _stri_size("IGetC#now$ ");
-			
+
 			write(STDOUT_FILENO, "IGetC#now$ ", lenth);
 		}
 

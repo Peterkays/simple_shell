@@ -1,4 +1,5 @@
 #include "shell.h"
+#include <unistd.h>
 /**
  * _get_envir - Find a variable in all environment variables.
  * @the_nme: Name of the environment variable.
