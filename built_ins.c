@@ -97,10 +97,10 @@ int _envyr(__attribute__((unused)) char **arrgz,
 {
 	int w = 0;
 
-	while (enviro[w] != 0)
+	while (environ[w] != 0)
 	{
 
-		_puts(enviro[w]);
+		_puts(environ[w]);
 		_puts("\n");
 		w++;
 	}
@@ -116,7 +116,7 @@ int _envyr(__attribute__((unused)) char **arrgz,
 int _set_envi(char *the_nme, char *its_valu)
 {
 	char *tmp, fresh_var[1024];
-	char **pe = enviro;
+	char **pe = environ;
 	char **ve;
 	int cntr = 0, i;
 
@@ -146,7 +146,7 @@ int _set_envi(char *the_nme, char *its_valu)
 		_stri_cat(fresh_var, its_valu);
 		ve[i] = fresh_var;
 		ve[++i] = NULL;
-		enviro = ve;
+		environ = ve;
 		free(pe);
 	}
 

@@ -17,7 +17,7 @@ int _begin(char **arrgz)
 	pid = fork();
 	if (pid == 0)
 	{
-		if (execve(arrgz[0], arrgz, enviro) == -1)
+		if (execve(arrgz[0], arrgz, environ) == -1)
 		{
 			perror("star");
 		}

@@ -10,7 +10,7 @@
 #include <stddef.h>
 
 /* Environmental variables */
-extern char **enviro;
+extern char **environ;
 
 /* Function declarations (prototypes) for main functions*/
 void _looper(void);
@@ -65,7 +65,7 @@ int _stri_comp(char *st1, char *st2);
 char *_stri_dupl(char *destin, char *stg);
 int _stri_compa(const char *st1, const char *st2, size_t n);
 int _putchar(char c);
-void _puts(char *str);
+void _puts(char *stri);
 int _atoi(char *q);
 
 #endif
