@@ -1,8 +1,8 @@
 #include "shell.h"
 
 /**
-  * signl_hadler - Signal handler.
-  * @sg: signal.
+  * signl_hadler - Signal handling.
+  * @sg: The signal.
   */
 
 void signl_hadler(int sg)

@@ -1,8 +1,8 @@
 #include "shell.h"
 
 /**
- * _smart_alloc -  Reallocates a memory block using malloc and free.
- * @pntr: Pointer
+ * _smart_alloc -  Re_allocates a memo using malloc and free.
+ * @pntr: Pointers
  * @foma_size: Old size
  * @curnt_size: New size
  * Return: returns a pointer to the array

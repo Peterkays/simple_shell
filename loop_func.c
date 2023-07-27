@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _looper - Returns a pointer to a newly allocated space in memory
+ * _looper - Returns a ptr to new allocated memory space.
 */
 
 void _looper(void)
@@ -19,18 +19,17 @@ void _looper(void)
 	do {
 		if (itr != 0)
 		{
-			/* Print prompt line. */
+			/* Print lyn prompt. */
 			lenth = _stri_size("IGetC#now$ ");
 
 			write(STDOUT_FILENO, "IGetC#now$ ", lenth);
 		}
 
-		/*Read from promt line (nputt) */
+		/*from promt line (nputt) */
 		nputt = _lyn_read();
 		if (nputt == NULL)
 			return;
 
-		/* Split readed nputt into arguments. */
 		arrgz = _lyn_split(nputt);
 		if (arrgz == NULL)
 		{
@@ -38,7 +37,6 @@ void _looper(void)
 			return;
 		}
 
-		/* Execute according to arguments. */
 		stts = _executing(arrgz, nputt);
 
 		/* Free nputt and arguments. */
