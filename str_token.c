@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
-  * _stri_ptn - Find the positing where the delimie is found in the string.
+  * _stri_ptn - Get delimie position in the string.
   * @sy: String.
-  * @delimie: Delimiter.
-  * Return: the place in the string.
+  * @delimie: The Delimiter.
+  * Return: place in the string.
   */
 int _stri_ptn(char *sy, const char *delimie)
 {
@@ -24,10 +24,10 @@ int _stri_ptn(char *sy, const char *delimie)
 }
 
 /**
-  * _strieq_ptn - Find the positing until the delimie is equal to the string.
+  * _strieq_ptn - Get delimie positing if equal to the string.
   * @ss: String.
   * @delimie: Delimiter.
-  * Return: the place when delimie is different to the string.
+  * Return: the place when delimie is different to str.
   */
 
 int _strieq_ptn(char *ss, const char *delimie)
@@ -42,7 +42,7 @@ int _strieq_ptn(char *ss, const char *delimie)
 	return (w);
 }
 /**
-  * _stritknz_r - Find the first token in a string until the dilimiter
+  * _stritknz_r - Find first tooken in str until the dilimiter
   *             and save the rest of the string in accept_stri.
   * @s: String.
   * @delimie: Delimiter.
@@ -82,10 +82,10 @@ char *_stritknz_r(char *s, const char *delimie, char **accept_stri)
 	return (s);
 }
 /**
-  * _stritknz - Tokenize a string in words separated by a delimiter.
+  * _stritknz - Tokenizing a str in words separated by a delimiter.
   * @s: String.
-  * @delimie: Delimiter.
-  * Return: Word tekenized.
+  * @delimie: the Delimiter.
+  * Return: Word tokenized.
   */
 
 char *_stritknz(char *s, const char *delimie)

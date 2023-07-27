@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * _stri_size - Find the lenght of a string.
+ * _stri_size - Find lenght size of string.
  * @s: string.
- * Return: lenght of the string.
+ * Return: size of the string.
  */
 int _stri_size(char *s)
 {
@@ -17,11 +17,11 @@ int _stri_size(char *s)
 }
 
 /**
- * _stri_cat - Concatent two strings.
+ * _stri_cat - Concatent 2 strs.
  * @destin: string.
  * @stg: string.
  *
- * Return: Strings concated.
+ * Return: Strs concated.
  */
 char *_stri_cat(char *destin, char *stg)
 {
@@ -38,12 +38,12 @@ char *_stri_cat(char *destin, char *stg)
 }
 
 /**
- * _stri_comp - Compare two strings..
+ * _stri_comp - Compare 2 strings..
  * @st1: string.
  * @st2: string.
- * Return: number < 0 if string 1 less string 2
- *         number = 0 if string 1 is equal to string 2
- *         number > 0 if string 1 is bigger than string 2
+ * Return: number < 0 when str 1 less string 2
+ *         number = 0 when str 1 is equal to string 2
+ *         number > 0 when str 1 is bigger than string 2
  */
 int _stri_comp(char *st1, char *st2)
 {
@@ -62,7 +62,7 @@ int _stri_comp(char *st1, char *st2)
 
 
 /**
-  * _stri_dupl - Print the same string.
+  * _stri_dupl - Prints copy of string.
   * @destin: array;
   * @stg: string;.
   *
@@ -87,11 +87,11 @@ char *_stri_dupl(char *destin, char *stg)
 }
 
 /**
-  * _stri_compa - String comaprison.
+  * _stri_compa - Str comaprison.
   * @st1: string 1
   * @st2: string 2
   * @n: number of bytes
-  * Return: 0 if equal diff if different.
+  * Return: 0 when equal diff if different.
   */
 int _stri_compa(const char *st1, const char *st2, size_t n)
 {

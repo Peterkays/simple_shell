@@ -9,10 +9,10 @@
 #include <string.h>
 #include <stddef.h>
 
-/* Environmental variables */
+/* Enviro variables */
 extern char **environ;
 
-/* Function declarations (prototypes) for main functions*/
+/* Prototypes for main functions*/
 void _looper(void);
 char *_lyn_read(void);
 char **_lyn_split(char *lyn);
@@ -20,12 +20,13 @@ int _executing(char **arrgz, char *nputt);
 int _begin(char **arrgz);
 void signl_hadler(int sg);
 
-/* Function declarations (prototypes for for builtin shell commands */
+/* Prototypes for built_in shell commands */
 int star_exit(char **arrgz, char *nputt);
 int _cdir(char **arrgz, __attribute__((unused)) char *nputt);
+
 /**
-  * _hellp - Help function
-  * @arrgz: List of arguments passed from parsing.
+  * _hellp - The help function
+  * @arrgz: Arguments passed from parsing list.
   * @nputt: Nputt line for free.
   * Return: 1 if works.
   */
@@ -33,7 +34,7 @@ int _hellp(__attribute__((unused)) char **arrgz,
 		__attribute__((unused)) char *nputt);
 
 /**
-  * _envyr - Env function
+  * _envyr - Environment function
   * @arrgz: List of arguments passed from parsing.
   * @nputt: Nputt line for free.
   * Return: 1 if works.
@@ -42,7 +43,7 @@ int _envyr(__attribute__((unused)) char **arrgz,
 	__attribute__((unused)) char *nputt);
 int _set_envi(char *the_nme, char *its_valu);
 
-/* Function declarations (prototypes) for auxiliary funtions */
+/* Prototypes) for aux funtions */
 ssize_t _gt_lyn(char **b, size_t *size_ofbaffa, FILE *strim);
 int _ridchar(void);
 
