@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _ridchar - Reads a text file and prints it to the POSIX
+ * _ridchar - Reads a txt and prints it to the POSIX
  * Return: char
  */
 

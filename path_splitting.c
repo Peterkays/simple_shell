@@ -2,10 +2,10 @@
 
 
 /**
-  * _split_way - Split the line of the path environment variable.
-  * @lyn: Line which contents the paths..
-  * @copy_lyn: Copy of the line which contents the paths.
-  * Return: An array with all paths splited.
+  * _split_way - Split the lyn of the path environment variable.
+  * @lyn: Lyn with contents in paths..
+  * @copy_lyn: Copy of lyn with contents in paths.
+  * Return: An array with all paths split.
   */
 char **_split_way(char *lyn, char *copy_lyn)
 {

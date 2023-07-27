@@ -1,8 +1,8 @@
 #include "shell.h"
 
 /**
-  * _lyn_split - Split the line wrote in the console.
-  * @lyn: Line wrote in console.
+  * _lyn_split - Split line from command.
+  * @lyn: Line wrote in command.
   * Return: An array with all words splited.
   */
 char **_lyn_split(char *lyn)

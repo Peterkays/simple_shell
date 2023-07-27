@@ -1,8 +1,8 @@
 #include "shell.h"
 
 /**
-  * _puts - print like puts function
-  * @stri: pointer to a char
+  * _puts - prints
+  * @stri: ptr to a char
   * Return: void
   */
 void _puts(char *stri)
@@ -17,8 +17,8 @@ void _puts(char *stri)
 }
 
 /**
-  * _putchar - writes the character c to stdout
-  * @c: The character to print
+  * _putchar - writes chars c to stdout
+  * @c: The char to print
   *
   * Return: On success 1.
   * On error, -1 is returned, and errno is set appropriately.
@@ -29,9 +29,9 @@ int _putchar(char c)
 }
 
 /**
-  * _atoi - Change a string to a integer.
+  * _atoi - Change a str to a integer.
   * @q: String.
-  * Return: Integer into the string.
+  * Return: Int into the string.
   */
 int _atoi(char *q)
 {
