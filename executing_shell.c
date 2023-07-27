@@ -1,8 +1,8 @@
 #include "shell.h"
 
 /**
-  * builtin_func - Redirect to builtin functions.
-  * @builtin_func: Redirect to builtin functions.
+  * builtin_func - Redirects built_in funct.
+  * @builtin_func: Redirects to built_in func.
   * Return: 1 if _hellp works, 0 if exit works.
   */
 
@@ -14,8 +14,8 @@ int (*builtin_func[])(char **arrgz, char *nputt) = {
 };
 
 /**
-  * _executing - Execute builtin process.
-  * @arrgz: List of arguments passed from parsing.
+  * _executing - Executes built_in process.
+  * @arrgz: Arguments passed from parsing list.
   * @nputt: Nputt line for free.
   * Return: _begin(arrgz).
   */

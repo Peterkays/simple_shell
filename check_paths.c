@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * error_in_alloc2 -  Allocation error
- * storing the address of the baffar containing the text into *b.
+ * error_in_alloc2 -  Error in allocatiorn
+ * storing the address of the baffar with the text into *b.
  *
  * @baffar: baffar to check
- * Return: -1 on eror.
+ * Return: -1 on erorr.
  */
 int error_in_alloc2(char *baffar)
 {
@@ -18,8 +18,8 @@ int error_in_alloc2(char *baffar)
 }
 
 /**
- * error_in_alloc1 -  Allocation error
- * storing the address of the baffar containing the text into *b.
+ * error_in_alloc1 -  Error in allocation.
+ * storing the address of the baffar with the text into *b.
  * @destin_way: destin way
  * @baffar: baffar to check
  * Return: -1 on eror.
@@ -35,8 +35,8 @@ if (!baffar)
 }
 
 /**
-  * _check_way - Split the line wrote in the console.
-  * @arrgz: Line wrote in console.
+  * _check_way - Split lyn wrote in the command.
+  * @arrgz: yne wrote in command.
   * @sine: sine
   * Return: String with the file path.
   */
@@ -46,19 +46,19 @@ char **_check_way(char **arrgz, int *sine)
 	char *way, **tokenn_way, *destin_way, *copy_lyn;
 	int j, k;
 
-	for (k = 0; *(arrgz[0] + k) != '\0'; k++) /* Check for '/' in the first arg */
+	for (k = 0; *(arrgz[0] + k) != '\0'; k++)
 	{
 		if (*(arrgz[0] + k) == '/')
 			return (arrgz);
 	}
-	destin_way = malloc(sizeof(char) * 1024); /*Memory alloc for the comp path */
+	destin_way = malloc(sizeof(char) * 1024); /*Memo alloc for comp path */
 	if (error_in_alloc2(destin_way) == -1)
 		return (NULL);
-	way = _get_envir("PATH"); /*  Getspath from envi with diff paths */
+	way = _get_envir("PATH"); /*  Finds path from environ with diff paths */
 	copy_lyn = malloc((_stri_size(way) + 1) * sizeof(char *));
 	if (error_in_alloc1(copy_lyn, destin_way) == -1)
 		return (NULL);
-	tokenn_way = _split_way(way, copy_lyn); /* Get array of pntr to pos paths*/
+	tokenn_way = _split_way(way, copy_lyn); /* Finds array of pntr to pos paths*/
 	if (tokenn_way == NULL)
 	{ free(copy_lyn);
 		return (NULL);
@@ -70,7 +70,7 @@ char **_check_way(char **arrgz, int *sine)
 		else
 			_stri_cat(destin_way, "./");
 		_stri_cat(destin_way, arrgz[0]);
-		if (access(destin_way, X_OK) != -1) /* Check acces rights */
+		if (access(destin_way, X_OK) != -1) /* verify acces rights */
 		{ arrgz[0] = destin_way;
 			*sine = 1;
 			free(copy_lyn);

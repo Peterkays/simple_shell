@@ -2,10 +2,10 @@
 #include <unistd.h>
 
 /**
-  * _cdir - Change the directory.
-  * @arrgz: List of arguments passed from parsing.
-  * @nputt: Nputt line for free.
-  * Return: 1 if works.
+  * _cdir - Change the operting directory.
+  * @arrgz: Arguments passed from parsing list.
+  * @nputt: Input line.
+  * Return: 1 if working.
   */
 int _cdir(char **arrgz, __attribute__((unused)) char *nputt)
 {
@@ -29,10 +29,10 @@ int _cdir(char **arrgz, __attribute__((unused)) char *nputt)
 
 
 /**
-  * _hellp - Display the help about a command.
-  * @arrgz: List of arguments passed from parsing.
-  * @nputt: Nputt line for free.
-  * Return: 1 if works.
+  * _hellp - Show help about a command.
+  * @arrgz: Arguments passed from parsing.
+  * @nputt: Nputt lyn for free.
+  * Return: 1 if working.
   */
 int _hellp(__attribute__((unused)) char **arrgz,
 		__attribute__((unused)) char *nputt)
@@ -49,8 +49,8 @@ int _hellp(__attribute__((unused)) char **arrgz,
 }
 
 /**
-  * star_exit - Exit to the shell.
-  * @arrgz: List of arguments passed from parsing.
+  * star_exit - Leave to the shell.
+  * @arrgz: Arguments passed from parsing list.
   * @nputt: Nputt line for free.
   * Return: 0 if works.
   */

@@ -1,9 +1,9 @@
 #include "shell.h"
 #include <unistd.h>
 /**
- * _get_envir - Find a variable in all environment variables.
- * @the_nme: Name of the environment variable.
- * Return: All the content into the environment variable.
+ * _get_envir - Finds variables in all environ var.
+ * @the_nme: The name of environ var.
+ * Return: Returns content into the environment variable.
  */
 
 char *_get_envir(const char *the_nme)
@@ -11,7 +11,7 @@ char *_get_envir(const char *the_nme)
 	size_t lenth;
 	char **pe;
 
-	/* Get NAME lenght*/
+	/* Gets NAME lenght size*/
 	lenth = _stri_size((char *)the_nme);
 
 
